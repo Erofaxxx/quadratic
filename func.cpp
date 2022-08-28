@@ -39,10 +39,6 @@ bool input_3(struct coeff *cofs){
 
 void output(struct out otv){
     
-    assert(isfinite(otv.cnt));
-    assert(isfinite(otv.p));
-    assert(isfinite(otv.q));
-    
     switch (otv.cnt)
     {
         case NO_SOLUTION:
@@ -168,11 +164,10 @@ double discriminant(struct coeff cofs)
 }
 
 
-void cycle_quadratic(struct coeff *cofs, struct out *otv, FILE *file){
+void cycle_quadratic(struct coeff *cofs, struct out *otv){
     
     assert(cofs != NULL);
     assert(otv != NULL);
-    assert(file != NULL);
 
     while (input_3( cofs ) )
     {

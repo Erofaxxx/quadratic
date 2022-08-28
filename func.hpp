@@ -115,7 +115,7 @@ bool compare(const double x,const double y);
  \param [in,out] cofs 3 coefficients a, b, c
  \param [in,out] otv Answer
  */
-void cycle_quadratic(struct coeff *cofs, struct out *otv, FILE *file);
+void cycle_quadratic(struct coeff *cofs, struct out *otv);
 
 ///Coefficients in quadratic equation a*x^2 + b*x + c = 0
 struct coeff{
@@ -138,6 +138,13 @@ enum count_solutions
     NO_SOLUTION   = 0, ///<Means it's no solution
     ONE_SOLUTION  = 1, ///<Means it's only one solution
     TWO_SULUTIONS = 2  ///<Means it's two solutions
+};
+///Errors
+enum ERRORS {
+    
+    OPEN_FILE_ERROR = 1,   ///<File wasn't open
+    NO_FILE_NAME_ERROR = 2 ///<File name don't input
+    
 };
 
 #endif /* func_hpp */

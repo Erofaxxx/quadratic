@@ -1,3 +1,10 @@
+//TODO
+//1.enum errors
+//2.doxygen
+//3.readme
+//4.make
+//5.compilation flags
+
 #include "func.hpp"
 
 //#define EPSILON 0.001
@@ -11,14 +18,16 @@
 
 //добавить аргументы командной строки
 int main (int argc, char *argv[]) {
-    char *nameFile;
-    if (argc > 1) nameFile = argv[1];
+    char *name_file;
+    if (argc > 1) name_file = argv[1];
     else
     {
-    printf("Не задано имя файла\n");
-    return 1;
+    printf("Не задано имя файла: %d\n", NO_FILE_NAME_ERROR);
+        
+    return NO_FILE_NAME_ERROR;
     }
-    FILE *file = fopen(nameFile, "r");
+    
+    FILE *file = fopen(name_file, "r");
 
     //FILE *file = fopen("test.txt", "r");
     
