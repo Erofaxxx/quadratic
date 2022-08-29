@@ -2,7 +2,7 @@
 //1.enum errors
 //2.doxygen
 //3.readme
-//4.make
+//4.make;
 //5.compilation flags
 
 #include "func.hpp"
@@ -41,7 +41,7 @@ int main (int argc, char *argv[]) {
     
 #else
     
-    cycle_quadratic(&cofs, &otv, file);
+    cycle_quadratic(&cofs, &otv);
     
 #endif
     

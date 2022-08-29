@@ -104,10 +104,10 @@ bool input_str(struct coeff *cofs, struct out *right_otv  ,FILE *file)
     {
         switch (right_otv->cnt)
         {
-            case 1:
+            case ONE_SOLUTION:
                 fscanf(file, "%lg", &right_otv->p);
                 break;
-            case 2:
+            case TWO_SULUTIONS:
                 fscanf(file,"%lg%lg", &right_otv->p, &right_otv->q );
                 break;
             default:

@@ -142,7 +142,6 @@ enum count_solutions
 ///Errors
 enum ERRORS {
     
-    OPEN_FILE_ERROR = 1,   ///<File wasn't open
     NO_FILE_NAME_ERROR = 2 ///<File name don't input
     
 };
