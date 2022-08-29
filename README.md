@@ -1,9 +1,5 @@
 # quadratic
 
-<h1 align="center">Hi there, I'm <a href="https://daniilshat.ru/" target="_blank">Stepan</a> 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">Student from Russia 🇷🇺</h3>
-
 <html>
 
 <head>
@@ -14,40 +10,38 @@
 
 <body>
 
-<p><strong>Программа, решающая квадратные уравнения</strong></p>
+<p><strong>A program that solves quadratic equations</strong></p>
 
 <ul>
 
-<p dir="ltr"><li><em>Есть два режима работы программы: тестирование и пользовательский.</em></li></p>
-  Программа считывает из файла 3 аргумента и ответ.
+<p dir="ltr"><li><em>There are two modes of program operation: testing and custom.</em></li></p>
+  The program reads 3 arguments and an answer from the file.
 
-<p dir="ltr"><li><u>Режим тестирования:</u></li></p>
-Программа считывает из файла 3 аргумента и ответ.
-  Выдает результат в виде Passed or Not passed.
-Тестировщику в файл стоит записывать в файл аргументы пробел и следом ответ через пробелы.
+<p dir="ltr"><li><u>Test mode:</u></li></p>
+The program reads 3 arguments and an answer from the file.
+  Returns the result as Passed or Not passed.
+The tester in the file should write the arguments to the file with a space and then the answer separated by spaces.
 
-<p dir="ltr"><li>Режим для пользователя предполагает ввод коэфициентов в терминал и вывод программой ответа.
+<p dir="ltr"><li>The mode for the user involves entering the coefficients into the terminal and outputting the answer by the program.
 </li></p>
-
-<p dir="ltr"><li>Переход на следующую строку и <sub>выравнивание текста .</sub></li></p>
-
+  
 </ul>
 
 </body>
 
 </html>
 
-Инструкция по скачиванию: 
+Download instructions: 
 
 git clone https://github.com/Erofaxxx/quadratic.git
 
-Открываем консоль в папке куда скачали.
+Open the console in the folder where you downloaded.
 
-Пишем:
+We write:
 
 make
 
-Потом:
+Then:
 
 ./program test.txt
 
