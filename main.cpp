@@ -17,8 +17,11 @@
 //#define NDEBUG
 
 //добавить аргументы командной строки
+#ifdef NDEBUG
 int main (int argc, char *argv[]) {
-    char *name_file;
+    
+    char *name_file = NULL;
+    
     if (argc > 1) name_file = argv[1];
     else
     {
@@ -35,18 +38,20 @@ int main (int argc, char *argv[]) {
     
     struct out otv {};
 
-#ifdef NDEBUG
-    
+
     tests(&cofs, &otv, file);
     
+    fclose(file);
+    
 #else
+int main ()
+{
+    struct coeff cofs {};
+    struct out otv {};
     
     cycle_quadratic(&cofs, &otv);
     
 #endif
-    
-    fclose(file);
-    
     //start_programm(&cofs, &otv, file);
     
     return 0;

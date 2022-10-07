@@ -1,5 +1,7 @@
 #include "func.hpp"
 
+//#define assert //
+
 const double EPSILON = 0.001;
 
 
@@ -17,6 +19,7 @@ void clean_buff()
 bool input_3(struct coeff *cofs){
     
     assert (cofs != NULL);
+    //assert (1 == 0);
     
     printf("Input 3 coefficients a, b, c. If you wanna exit programm - print 'e'. \n");
    
@@ -30,10 +33,12 @@ bool input_3(struct coeff *cofs){
             return false;
         }
         
-        fflush(stdin);
+        fflush (stdin);
         
         printf ("Please, input three double nums: \n");
     }
+    
+    fflush (stdin);
     return true;
 }
 
